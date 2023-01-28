@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senyum Indonesia</title>
+    <link rel="stylesheet" href="./css/style3.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="./">
+              <img src="./img/Vector.png" alt="" width="117" height="60" class="d-inline-block align-text-center rounded-circle" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fw-bold text-danger" href="./event.html">Event</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./galeri.html">Galeri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./kontak.html">Kontak</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- JUMBOTRON -->
+        <section class="eventt" id="eventt">
+          <div class="container">
+            <div class="row ms-1">
+              <div class="col">
+                <div class="row">
+                  <h1 class="display-3 fw-bold text-danger"><span class="text-dark">Pondok</span><br />Senyum</h1>
+                </div>
+                <div class="row">
+                  <p id="pp">Pondok Senyum merupakan salah satu program Yayasan Senyum Indonesia yang bertujuan untuk membina anak - anak yatim yang berada di pelosok untuk diberikan pembelajaran sekolah, agama, karakter dan juga usaha.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <!-- <div class="bg-image4"> -->
+        <div class="container-bg">
+          <!-- JUMBOTRON -->
+          <section class="jumbotron5 jumbotron-fluid" id="jumbotron">
+            <section class="carousell">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/image3.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/image4.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/image5.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/image6.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <button class="carousel-control-prev" id="prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" id="next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+          </section>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      var myCarousel = document.querySelector('#carouselExampleControls');
+      var carousel = new bootstrap.Carousel(myCarousel);
+      $(document).ready(function () {
+        $(myCarousel).on('slide.bs.carousel', function (event) {
+          //Pondok Senyum
+          if (event.from == 0) {
+            $('#next').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Maret</span><br />Merit</h1>');
+              $('#pp').text('Maret Merit merupakan program Yayasan Senyum Indonesia untuk memfasilitasi pasangan yang belum menikah dan terkendala biaya. Kegiatan ini biasa dilakukan secara massal setiap tahun nya dibulan maret.');
+            });
+            $('#prev').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Ramadhan</span><br />Cinta</h1>');
+              $('#pp').text('Ramadhan Cinta merupakan program Yayasan Senyum Indonesia yang dilaksanakan pada bulan ramadhan, yang didalamnya terdapat kegiatan pengobatan gratis, pembagian makanan, dll.');
+            });
+            //Maret Merit
+          } else if (event.from == 1) {
+            $('#next').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Manuk</span><br />Hiber</h1>');
+              $('#pp').text('Manuk Hiber merupakan program Yayasan Senyum Indonesia yang merupakan program khitanan massal secara gratis bagi masyarakat tidak mampu.');
+            });
+            $('#prev').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Pondok</span><br />Senyum</h1>');
+              $('#pp').text('Pondok Senyum merupakan salah satu program Yayasan Senyum Indonesia yang bertujuan untuk membina anak - anak yatim yang berada di pelosok untuk diberikan pembelajaran sekolah, agama, karakter dan juga usaha.');
+            });
+            //Manuk Hiber
+          } else if (event.from == 2) {
+            $('#next').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Ramadhan</span><br />Cinta</h1>');
+              $('#pp').text('Ramadhan Cinta merupakan program Yayasan Senyum Indonesia yang dilaksanakan pada bulan ramadhan, yang didalamnya terdapat kegiatan pengobatan gratis, pembagian makanan, dll.');
+            });
+            $('#prev').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Maret</span><br />Merit</h1>');
+              $('#pp').text('Maret Merit merupakan program Yayasan Senyum Indonesia untuk memfasilitasi pasangan yang belum menikah dan terkendala biaya. Kegiatan ini biasa dilakukan secara massal setiap tahun nya dibulan maret.');
+            });
+            //Ramadhan Cinta
+          } else if (event.from == 3) {
+            $('#next').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Pondok</span><br />Senyum</h1>');
+              $('#pp').text('Pondok Senyum merupakan salah satu program Yayasan Senyum Indonesia yang bertujuan untuk membina anak - anak yatim yang berada di pelosok untuk diberikan pembelajaran sekolah, agama, karakter dan juga usaha.');
+            });
+            $('#prev').click(function () {
+              $('h1').html('<h1 class="display-3 fw-bold text-danger"><span class="text-dark">Manuk</span><br />Hiber</h1>');
+              $('#pp').text('Manuk Hiber merupakan program Yayasan Senyum Indonesia yang merupakan program khitanan massal secara gratis bagi masyarakat tidak mampu.');
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
